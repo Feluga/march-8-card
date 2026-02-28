@@ -68,7 +68,7 @@ body {
     padding: 2rem;
     border-radius: 24px;
     text-align: center;
-    width: 90%;
+    width: 500px;
     border: 4px solid transparent;
     background-image:
         linear-gradient(white, white),
@@ -147,20 +147,26 @@ button:hover {
 @media (max-width: 600px) {
     .card {
         width: 90% !important;
-        /* Заставит карточку сжаться */
         max-width: 350px !important;
-        padding: 1.2rem !important;
+        padding: 1.5rem !important;
+        /* Чтобы карточка не прилипала к верху экрана */
+        margin: 20px auto;
     }
 
-    .actions {
-        flex-direction: column !important;
-        /* Кнопки встанут друг под другом */
-        gap: 15px !important;
+    .phrase-container {
+        height: auto;
+        min-height: 120px;
+    }
+
+    .between {
+        /* Чтобы кнопки не слипались, если экран совсем узкий */
+        flex-direction: column;
+        gap: 10px;
     }
 
     button {
-        width: 100% !important;
-        /* Кнопки станут на всю ширину */
+        width: 100%;
+        /* Кнопки на весь экран телефона удобнее нажимать */
     }
 }
 </style>
