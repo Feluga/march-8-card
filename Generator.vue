@@ -68,7 +68,10 @@ body {
     padding: 2rem;
     border-radius: 24px;
     text-align: center;
-    width: 500px;
+    width: 95%;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin: 0 auto;
     border: 4px solid transparent;
     background-image:
         linear-gradient(white, white),
