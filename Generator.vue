@@ -144,11 +144,23 @@ button:hover {
 
 
 
-@media screen and (max-width: 600px) {
-  .card {
-    width: 90% !important; /* Принудительно меняем ширину */
-    max-width: 320px;       /* Ограничим, чтобы не была слишком широкой */
-    padding: 1.5rem !important;
-  }
+@media (max-width: 600px) {
+    .card {
+        width: 90% !important;
+        /* Заставит карточку сжаться */
+        max-width: 350px !important;
+        padding: 1.2rem !important;
+    }
+
+    .actions {
+        flex-direction: column !important;
+        /* Кнопки встанут друг под другом */
+        gap: 15px !important;
+    }
+
+    button {
+        width: 100% !important;
+        /* Кнопки станут на всю ширину */
+    }
 }
 </style>
